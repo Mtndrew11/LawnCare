@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\SPA.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SPA.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.SPA.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.SPA.props",
+      "PackagePath": "build\\SPA.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SPA.props",
+      "PackagePath": "buildMultiTargeting\\SPA.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.SPA.props",
+      "PackagePath": "buildTransitive\\SPA.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

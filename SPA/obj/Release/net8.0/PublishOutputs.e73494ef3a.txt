@@ -1,0 +1,8 @@
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\SPA.exe
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\SPA.dll
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\SPA.deps.json
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\SPA.runtimeconfig.json
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\SPA.pdb
+C:\Users\kingandrew\Documents\Learning\Repos\LawnCare\SPA\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll

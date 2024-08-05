@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\models\\weathermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:models\\weathermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|c:\\users\\kingandrew\\documents\\learning\\repos\\lawncare\\spa\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7132F1-F521-44F4-A982-0035C64567D1}|SPA.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1177468647:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T19:27:53.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookModel.cs",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\BookModel.cs",
+              "RelativeDocumentMoniker": "Models\\BookModel.cs",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\BookModel.cs",
+              "RelativeToolTip": "Models\\BookModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T12:26:49.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherModel.cs",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\WeatherModel.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherModel.cs",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\WeatherModel.cs",
+              "RelativeToolTip": "Models\\WeatherModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T12:02:36.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:05:18.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherData.cs",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\WeatherData.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherData.cs",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Models\\WeatherData.cs",
+              "RelativeToolTip": "Models\\WeatherData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T14:17:55.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T13:36:27.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\kingandrew\\Documents\\Learning\\Repos\\LawnCare\\SPA\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAACYAAAAAAAAAAAAiwEEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T18:59:28.616Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

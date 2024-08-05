@@ -9,6 +9,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
+using System.Text.Json;
 
 namespace WeatherApp
 {
@@ -146,6 +147,19 @@ namespace WeatherApp
                 Console.WriteLine($"json data null: {jsonData3.hourly.soil_temperature_6cm}");
             }
 
+            DateTime currentDate = DateTime.Now;
+
+            var dict = new Dictionary<string, object>
+            {
+                {"Date", DateTime.Now},
+                {"RainfallLast7Days", Math.Truncate(RainfallPast7Days * 100) / 100},
+                {"RainfallNext3Days", Math.Truncate(precipitationSum * 100) / 100},
+                {"SoilTempAvgLast3Days", Math.Truncate(soilTempAvg * 100) / 100}
+            };
+
+            var json = System.Text.Json.JsonSerializer.Serialize(dict);
+            Console.WriteLine(json);
+
             // Output
             String output = $@"
             Date                                         {DateTime.Now}
@@ -154,9 +168,9 @@ namespace WeatherApp
             Soil Temperatures Averages the last 3 days:  {Math.Truncate(soilTempAvg * 100) / 100}
             ";
 
-            Console.WriteLine(output);
+            Console.WriteLine(json);
 
-            return new OkObjectResult(output);
+            return new OkObjectResult(json);
 
         }
     }

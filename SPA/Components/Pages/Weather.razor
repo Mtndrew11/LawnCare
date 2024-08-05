@@ -1,64 +1,93 @@
 ﻿@page "/weather"
 @attribute [StreamRendering]
+@using Newtonsoft.Json;
+@using SPA.Models;
 
-<PageTitle>Weather</PageTitle>
-
-<h1>Weather</h1>
-
-<p>This component demonstrates showing data.</p>
-
-@if (forecasts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-
+<!---------- CODE ---------->
 @code {
-    private WeatherForecast[]? forecasts;
+
+    private string API_Content = null;
+    private string response = null;
+    private WeatherModel WeatherModelData = null;
 
     protected override async Task OnInitializedAsync()
     {
-        // Simulate asynchronous loading to demonstrate streaming rendering
-        await Task.Delay(500);
+        // Replace with your Azure Function URL
+        string functionUrl = "https://weatherapp20240729133707.azurewebsites.net/api/GetWeatherData?code=ziHD04RuERk25VSlAG1ZQVl272-TRIxCtRDxt44JPnwOAzFuUUvxnQ%3D%3D";
 
-        var startDate = DateOnly.FromDateTime(DateTime.Now);
-        var summaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" };
-        forecasts = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        using (var httpClient = new HttpClient())
+        {
+            // Make an HTTP GET request to your Azure Function
+
+            //var response = await httpClient.GetAsync(functionUrl);
+            //var response = await httpClient.GetAsync("https://weatherapp20240729133707.azurewebsites.net/api/GetWeatherData?code=ziHD04RuERk25VSlAG1ZQVl272-TRIxCtRDxt44JPnwOAzFuUUvxnQ%3D%3D");
+            using var client = new HttpClient();
+            var response = await client.GetAsync(functionUrl);
+
+            if (response.IsSuccessStatusCode)
             {
-                Date = startDate.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = summaries[Random.Shared.Next(summaries.Length)]
-            }).ToArray();
-    }
+                Console.WriteLine("Creating API_Content as string using reponse data...");
+                API_Content = await response.Content.ReadAsStringAsync();
+                WeatherModelData = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherModel>(API_Content);
+                Console.WriteLine("WeatherModelData contents:");
+                Console.WriteLine(WeatherModelData);
+            }
 
-    private class WeatherForecast
-    {
-        public DateOnly Date { get; set; }
-        public int TemperatureC { get; set; }
-        public string? Summary { get; set; }
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            else
+            {
+                API_Content = "Error fetching data from Azure Function.";
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("API_Content:");
+            Console.WriteLine(API_Content);
+            Console.WriteLine("");
+
+            Console.WriteLine("");
+            Console.WriteLine("response:");
+            Console.WriteLine(response);
+            Console.WriteLine("");
+
+            Console.WriteLine("response content:");
+            Console.WriteLine(response.Content);
+            Console.WriteLine("");
+
+        }
     }
+}
+
+<!---------- HTML ---------->
+<PageTitle>Weather</PageTitle>
+
+<h1>About</h1>
+<p>This component calls a function app endpoint. The function app calls a weather api and displays the data.</p>
+
+
+<h2>Data Retrieval</h2>
+@if (WeatherModelData != null)
+{
+    <table>
+        <tr>
+            <td><b>Date:</b></td>
+            <td>@WeatherModelData.Date</td>
+        </tr>
+        <tr>
+            <td><b>Rainfall (Last 7 Days):</b></td>
+            <td>@WeatherModelData.RainfallLast7Days</td>
+        </tr>
+        <tr>
+            <td><b>Rainfall (Next 3 Days):</b></td>
+            <td>@WeatherModelData.RainfallNext3Days</td>
+        </tr>
+        <tr>
+            <td><b>Soil Temp (Avg Last 3 Days):</b></td>
+            <td>@WeatherModelData.SoilTempAvgLast3Days</td>
+        </tr>
+    </table>
+
+}
+
+else
+{
+    <p>No weather data available.</p>
 }
